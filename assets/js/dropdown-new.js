@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	const widgetSelector = '.wp-dropdown-new-widget .wp-dropdown-new';
+	const widgetSelector = '.wp-dropdown-new';
 
 	function setPanelState(item, open, immediate) {
 		const trigger = item.querySelector(':scope > .wp-dropdown-new_parent');

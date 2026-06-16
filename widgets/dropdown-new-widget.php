@@ -207,10 +207,7 @@ class Dropdown_New_Widget extends Widget_Base {
 						'max' => 100,
 					),
 				),
-				'default'    => array(
-					'unit' => 'px',
-					'size' => 320,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .wp-dropdown-new' => 'width: {{SIZE}}{{UNIT}}; max-width: 100%;',
 				),
@@ -237,7 +234,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Background Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#141D2F',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_wrapper' => 'background-color: {{VALUE}};',
 				),
@@ -249,7 +246,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Border Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => 'rgba(255,255,255,0.08)',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_wrapper' => 'border-color: {{VALUE}};',
 				),
@@ -262,14 +259,7 @@ class Dropdown_New_Widget extends Widget_Base {
 				'label'      => esc_html__( 'Border Radius', 'wp-dropdown-new-menu' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', '%', 'em' ),
-				'default'    => array(
-					'top'      => 18,
-					'right'    => 18,
-					'bottom'   => 18,
-					'left'     => 18,
-					'unit'     => 'px',
-					'isLinked' => true,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .wp-dropdown-new_wrapper' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
@@ -324,7 +314,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Text Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#F5F7FB',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_parent' => 'color: {{VALUE}};',
 				),
@@ -369,7 +359,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Hover Background', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#1D2A43',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_parent:hover' => 'background-color: {{VALUE}};',
 				),
@@ -381,7 +371,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Active Background', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#1D2A43',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_item.is-open > .wp-dropdown-new_parent' => 'background-color: {{VALUE}};',
 				),
@@ -400,10 +390,7 @@ class Dropdown_New_Widget extends Widget_Base {
 						'max' => 180,
 					),
 				),
-				'default'    => array(
-					'unit' => 'px',
-					'size' => 68,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .wp-dropdown-new_parent' => 'min-height: {{SIZE}}{{UNIT}};',
 				),
@@ -416,14 +403,7 @@ class Dropdown_New_Widget extends Widget_Base {
 				'label'      => esc_html__( 'Item Padding', 'wp-dropdown-new-menu' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
-				'default'    => array(
-					'top'      => 22,
-					'right'    => 24,
-					'bottom'   => 22,
-					'left'     => 24,
-					'unit'     => 'px',
-					'isLinked' => false,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .wp-dropdown-new_parent' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				),
@@ -458,7 +438,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Text Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#DCE8F7',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_child-link' => 'color: {{VALUE}};',
 				),
@@ -470,7 +450,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Hover Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#FFFFFF',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_child-link:hover' => 'color: {{VALUE}};',
 				),
@@ -482,7 +462,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Background Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => 'rgba(92,200,255,0.08)',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_child-link' => 'background-color: {{VALUE}};',
 				),
@@ -494,7 +474,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Hover Background', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => 'rgba(92,200,255,0.17)',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_child-link:hover' => 'background-color: {{VALUE}};',
 				),
@@ -507,14 +487,7 @@ class Dropdown_New_Widget extends Widget_Base {
 				'label'      => esc_html__( 'Padding', 'wp-dropdown-new-menu' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
-				'default'    => array(
-					'top'      => 15,
-					'right'    => 24,
-					'bottom'   => 15,
-					'left'     => 24,
-					'unit'     => 'px',
-					'isLinked' => false,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .wp-dropdown-new_child-link' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} calc({{LEFT}}{{UNIT}} + (var(--wp-dropdown-depth) * 20px));',
 				),
@@ -548,10 +521,7 @@ class Dropdown_New_Widget extends Widget_Base {
 						'max' => 30,
 					),
 				),
-				'default'    => array(
-					'unit' => 'px',
-					'size' => 9,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .lil_arrow' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 				),
@@ -563,7 +533,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Arrow Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#AEBBD0',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .lil_arrow' => 'border-color: {{VALUE}};',
 				),
@@ -575,7 +545,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Active Arrow Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#5CC8FF',
+				'default'   => '',
 				'selectors' => array(
 					'{{WRAPPER}} .wp-dropdown-new_item.is-open > .wp-dropdown-new_parent .lil_arrow' => 'border-color: {{VALUE}};',
 				),
@@ -614,7 +584,7 @@ class Dropdown_New_Widget extends Widget_Base {
 			array(
 				'label'     => esc_html__( 'Color', 'wp-dropdown-new-menu' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '#5CC8FF',
+				'default'   => '',
 				'condition' => array(
 					'accent_enabled' => 'yes',
 				),
@@ -636,10 +606,7 @@ class Dropdown_New_Widget extends Widget_Base {
 						'max' => 12,
 					),
 				),
-				'default'    => array(
-					'unit' => 'px',
-					'size' => 2,
-				),
+				'default'   => array(),
 				'condition'  => array(
 					'accent_enabled' => 'yes',
 				),
@@ -676,10 +643,7 @@ class Dropdown_New_Widget extends Widget_Base {
 						'max' => 60,
 					),
 				),
-				'default'    => array(
-					'unit' => 'px',
-					'size' => 0,
-				),
+				'default'   => array(),
 				'selectors'  => array(
 					'{{WRAPPER}} .wp-dropdown-new_item + .wp-dropdown-new_item' => 'margin-top: {{SIZE}}{{UNIT}};',
 				),
